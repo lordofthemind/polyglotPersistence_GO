@@ -4,8 +4,16 @@
 ├── cmd
 ├── configs
 ├── go.mod
+├── go.sum
 ├── handlers
 ├── initializers
+│   ├── connectMongoDB.go
+│   ├── connectPostgreSQL.go
+│   ├── initMongoDB.go
+│   ├── initPostgreSQL.go
+│   ├── loadEnvironmentVariables.go
+│   ├── migrateMongoDB.go
+│   └── migratePostgreSQL.go
 ├── main.go
 ├── middlewares
 ├── repositories
@@ -16,4 +24,4 @@
 ├── types
 └── utils
 
-12 directories, 5 files
+12 directories, 13 files
