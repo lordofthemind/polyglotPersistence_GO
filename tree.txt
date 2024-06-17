@@ -1,0 +1,19 @@
+.
+├── Makefile
+├── Readme.md
+├── cmd
+├── configs
+├── go.mod
+├── handlers
+├── initializers
+├── main.go
+├── middlewares
+├── repositories
+├── routes
+├── scripts
+├── tests
+├── tree.txt
+├── types
+└── utils
+
+12 directories, 5 files
