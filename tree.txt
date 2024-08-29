@@ -1,27 +1,85 @@
 .
 ├── Makefile
 ├── Readme.md
+├── bin
 ├── cmd
-├── configs
+├── docs
 ├── go.mod
 ├── go.sum
-├── handlers
-├── initializers
-│   ├── connectMongoDB.go
-│   ├── connectPostgreSQL.go
-│   ├── initMongoDB.go
-│   ├── initPostgreSQL.go
-│   ├── loadEnvironmentVariables.go
-│   ├── migrateMongoDB.go
-│   └── migratePostgreSQL.go
+├── internals
+│   ├── configs
+│   ├── handlers
+│   ├── initializers
+│   │   ├── connectMongoDB.go
+│   │   ├── connectPostgreSQL.go
+│   │   ├── initMongoDB.go
+│   │   ├── initPostgreSQL.go
+│   │   ├── loadEnvironmentVariables.go
+│   │   ├── migrateMongoDB.go
+│   │   └── migratePostgreSQL.go
+│   ├── middlewares
+│   ├── repositories
+│   ├── routes
+│   ├── types
+│   └── utils
+├── logs
 ├── main.go
-├── middlewares
-├── repositories
-├── routes
+├── pkg
 ├── scripts
+├── ssl
 ├── tests
-├── tree.txt
-├── types
-└── utils
+└── tree.txt
 
-12 directories, 13 files
+18 directories, 13 files
+
+
+
+.
+├── Makefile
+├── Readme.md
+├── bin
+├── cmd
+│   ├── migrate.go
+│   └── server.go
+├── docs
+├── go.mod
+├── go.sum
+├── internals
+│   ├── configs
+│   │   ├── databaseConfig.go
+│   ├── handlers
+│   │   ├── userHandler.go
+│   ├── initializers
+│   │   ├── connectMongoDB.go
+│   │   ├── connectPostgreSQL.go
+│   │   ├── initMongoDB.go
+│   │   ├── initPostgreSQL.go
+│   │   ├── loadEnvironmentVariables.go
+│   │   ├── migrateMongoDB.go
+│   │   └── migratePostgreSQL.go
+│   ├── middlewares
+│   ├── models
+│   │   └── user.go
+│   ├── repositories
+│   │   ├── userRepository.go
+│   │   ├── postgres
+│   │   │   └── postgresUserRepository.go
+│   │   ├── mongo
+│   │   │   └── mongoUserRepository.go
+│   ├── routes
+│   │   └── userRoutes.go
+│   ├── types
+│   └── utils
+├── logs
+│   ├── migration.log
+│   └── server.log
+├── main.go
+├── pkg
+├── scripts
+│   └── setup.sh
+├── ssl
+├── tests
+│   ├── e2e
+│   ├── integration
+│   └── unit
+└── tree.txt
